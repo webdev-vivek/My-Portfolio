@@ -1,0 +1,253 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (max-width:416px){
+    #page1{
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+    }
+    .box1{
+        color: white;
+       display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box1 #first{
+        display: flex;
+        margin-top: 20px;
+
+    }
+    #first h1{
+        font-size: 40px;
+        font-family: monospace;
+        color: rgb(255, 176, 28);
+        flex-wrap: wrap;
+
+    }
+    #first h2{
+        font-family: cursive;
+        font-weight:20;
+    }
+    .box1 p{
+        font-family: cursive;
+        flex-wrap: wrap;
+    }
+    
+    
+    .box2{
+        display: flex;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+        justify-content: center;
+    }
+    .image{
+        height: 250px;
+        width: 400px;
+         background-image: url(./9711.png);
+        background-size: cover;
+    }
+    .image:hover{
+        height: 265px;
+        width: 415px;
+    }
+    .box3{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+       
+    }
+    .icone{
+        width: 100%;
+        background-color: black;
+       display: flex;
+       flex-direction: row;
+      
+       
+    }
+    .icone #line{
+        width: 50px;
+        height: 2px;
+        background-color: orange;
+        display: flex;
+    }
+    #line:hover{
+        background-color: red;
+
+    }
+    .icone #in{
+        width: 50px;
+        height: 50px;
+        color: orange;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #in:hover{
+        color: yellow;
+    }
+    .icone #git{
+        width: 50px;
+        height: 50px;
+        color: orange;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    }
+    #git:hover{
+        color: yellow;
+    }
+    .icone #fac{
+        width: 50px;
+        height: 50px;
+        color: orange;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    }
+    #fac:hover{
+        color: yellow;
+    }
+    .icone #what{
+        width: 50px;
+        height: 50px;
+        color: orange;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    }
+    #what:hover{
+        color: yellow;
+    }
+    i{
+        font-size: 30px;
+    }
+    
+    .box4{
+        display: flex;
+        flex-direction: column;
+        height: 38px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        
+    
+    }
+    .box4 h1{
+        display: flex;
+        margin-left: 30px;
+    }
+    .box5{
+        
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction:row;
+    }
+     .box5 #box6{
+       
+        display: flex;
+        justify-content: center;
+        
+    }
+    #box6 hr{
+        margin-left: -10px;
+        text-align: center;
+        width: 20px;
+        
+    }
+    .box5 #box7{
+     
+        
+        
+        color: white;
+    }
+
+
+
+
+
+    #page2{
+        background-color: black;
+       }
+       .skill{
+       text-align: center;
+       font-size: 25px;
+       color: white;
+       }
+       .skillsymbol{
+           display: flex;
+           align-items: center;
+           justify-content:center ;
+           flex-wrap: wrap;
+       }
+       .language{
+           height: 100px;
+           width: 100px;
+           border: 1px solid;
+           margin: 20px;
+           border-image:linear-gradient(105deg, #f59313 20%, #0b29ed 100%,#5aed0b 60%,#aded0b 80%,#ede90b 100%) 1;
+       }
+       /* .language:hover{
+           height: 110px;
+           width: 110px;
+       } */
+       .html{
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          
+           
+           
+       }
+       .html img{
+           width: 40px;
+           background-color: black ;
+       }
+        .language img:hover{
+           width: 45px;
+           color: #5aed0b;
+       }
+       .css{
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .css img{
+           width: 40px;
+       }
+       .c{
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .c img{
+           width: 40px;  
+       }
+       .cpp{
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .cpp img{
+           width: 40px;
+       }
+       .python{
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .python img{
+           width: 40px;
+       }
+    }

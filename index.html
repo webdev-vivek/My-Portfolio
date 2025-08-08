@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pfolio</title>
+    <link rel="stylesheet" href="stylePf.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<html>
+
+<body>
+    <section id="page1">
+        <div class="box1">
+            <div id="first">
+
+                <h2>Hi,I'm </h2>
+                <h1>Vivek Kumar</h1>
+            </div>
+            <p>Java Developer</p>
+            <a href="Resume.pdf" target="_blank">
+                <button id="btn">View Resume</button>
+            </a>
+
+        </div>
+        <div class="box2">
+            <div class="image"></div>
+        </div>
+        <div class="box3">
+            <div class="icone">
+                <div id="line"></div>
+                <div id="in">
+                    <a href="https://linkedin.com/in/vivek-kumar-125a44333/" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                </div>
+                <div id="git">
+                    <a href="https://github.com/webdev-vivek" target="_blank"><i class="ri-github-fill"></i></a>
+                </div>
+                <div id="twi">
+                    <a href="https://x.com/vivekk875713?t=j_fjeKZNP1cffLTPSlZxBQ&s=08" target="_blank"><i class="ri-twitter-fill"></i></a>
+                </div>
+                <div id="what">
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="box4">
+        <h1>About</h1>
+    </div>
+    <div class="box5">
+        <div id="box6">
+            <hr width="30px;" color="orange" size="2">
+        </div>
+        <div id="box7">
+            <p>I Am A Skilled Java Developer With Expertise In Creating High-Performance  Applications.
+                 With A Deep Understanding Of  Java, I Turn Complex Designs Into Seamless, 
+                Interactive User Interfaces. My Focus Is On Delivering Clean, Maintainable Code While Ensuring Optimal
+                 User Experience And Cross-Browser Compatibility. With [X Years Of Experience, I Thrive On Solving Problems And Continuously 
+                 Learning New Technologies To Build Innovative, Efficient Solutions. Let's Collaborate To Bring Your Ideas To Life!
+            </p>
+
+        </div>
+    </div>
+    <section id="page2">
+        <div class="skill">
+            <h1>Skill</h1>
+        </div>
+        <div class="skillsymbol">
+            <div class="language html">
+                <img src="./HTML5.png" alt="">
+            </div>
+            <div class="language css">
+                <img src="./CSS3.png" alt="">
+            </div>
+            <div class="language c">
+                <img src="./C.png" alt="">
+            </div>
+            <div class="language cpp">
+                <img src="./C++ (CPlusPlus).png" alt="">
+            </div>
+            <div class="language java">
+                <img src="./java.png" alt="">
+            </div>
+            <div class="language python">
+                <img src="./Python.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="page3">
+        <div class="project">
+            <h1>Project</h1>
+        </div>
+        <div class="project_container">
+            <div class="project1 box_project"></div>
+        </div>
+    </section>
+    <section class="contact-section">
+    <h2>Contact</h2>
+    <div class="form-container">
+      <h3>Get In Touch</h3>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Id" required>
+
+        <!-- <label for="title">Subject:</label>
+        <input type="text" id="title" name="title" placeholder="Subject" required /> -->
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+  <div class="footer-content">
+    <p>© 2025 Vivek Kumar. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/webdev-vivek" target="_blank"><i class="ri-github-fill"></i>GitHub</a> |
+      <a href="https://linkedin.com/in/vivek-kumar-125a44333/" target="_blank"><i class="ri-linkedin-box-line"></i>LinkedIn</a>|
+      <a href="https://x.com/vivekk875713?t=j_fjeKZNP1cffLTPSlZxBQ&s=08" target="_blank"><i class="ri-twitter-fill"></i>Twitter</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script> 
+    
+  // Initialize EmailJS with your public key
+  (function(){
+    emailjs.init("1INuj_488ge7xHpcB"); // Replace with your actual public key
+  })();
+
+  // Send form data
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_rftea6c", "template_2h5f3e8", this)
+      .then(function() {
+        alert("Message sent successfully!");
+      }, function(error) {
+        console.log(error);
+        alert("Failed to send message. Try again later.");
+      });
+  });
+
+</script>
+
+</body>
+
+</html>
